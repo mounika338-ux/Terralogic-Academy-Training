@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+import MyClassComponent from './MyClassComponent'
 import './App.css';
+import Button from './Button';
+import Cards from  './Cards';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <><MyClassComponent />
+    // <>
+    // <Button name="A" />
+    // <Button name="B" />
+    // <Button name="C"/>
+    // <Button name="D"/>
+    // </>
+    
+    <div >
+      <Cards name="Monika" skill="React, TypeScript" college="VIT" />
+      <Cards name="siri" skill="Python, ML" college="NIT" />
+      <Cards name="sai" skill="UI/UX, Figma" college="SRM" />
     </div>
-  );
+    </>
+  )
+   
+
 }
 
 export default App;
