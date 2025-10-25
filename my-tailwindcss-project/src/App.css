@@ -1,0 +1,14 @@
+.text-red-300 {          
+  background-color: #fff;      
+  padding: 40px;               
+  margin: 50px auto;           
+  width: 300px;               
+            
+  border-radius: 12px;         
+  font-size: 40px;             
+  font-weight: bold;           
+}
+body {
+  background-color: gray;   
+  font-family: serif;
+}
