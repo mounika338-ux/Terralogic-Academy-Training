@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ArrayTraversal from './ArrayTraversal';
+import ButtonCheckComponent from './buttonCheck';
+import ClassComponent from './ClassComponent';
+import ConditionalRendering from './ConditionalRendering';
+import DataBindingComponent from './DataBindingComponent';
+import Greetings from './Greetings';
+import IncrementComponent from './IncrementComponent';
+import ListUsage from './ListUsage';
+import ParentComponent from './ParentComponent';
+import WelcomeMessage from './WelcomeMessage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <ButtonCheckComponent />
+     <IncrementComponent />
+     <ClassComponent />
+     <DataBindingComponent/>
+     <ParentComponent/>
+      <WelcomeMessage isLoggedIn={false} />
+      <Greetings isLoggedIn={true} isAuthorized={true} />
+      <ConditionalRendering isLoggedIn={false}/>
+      <ListUsage/>
+      <ArrayTraversal/>
+
     </div>
   );
 }
